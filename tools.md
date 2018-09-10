@@ -4,7 +4,7 @@
 
 ### Emulator/debugger
 - [Geiger's Snes9x Debugger](http://geigercount.net/crypt/) - [local mirror v1.51.ep10r2](local_mirror/snes9x1.51.ep10r2.zip)
-- [NO$SNS](https://problemkaputt.de/sns.htm) [local mirror v1.6](local_mirror/no$sns.zip)
+- [NO$SNS](https://problemkaputt.de/sns.htm) - [local mirror v1.6](local_mirror/no$sns.zip)
 
 ### Graphics conversion for the title screen
 - [BMP2SNES](http://www.romhacking.net/utilities/923/) - [local mirror v1.0](local_mirror/BMP2SNES.zip)
