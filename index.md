@@ -4,7 +4,7 @@ This is a collection of useful information when modifying the SNES version of NB
 
 ### Contents
 
-- [Tools](tools.html)
+- [Tools and Documents](tools_and_documents.html)
 - Title screen code
 - Palettes
 - Saveram
