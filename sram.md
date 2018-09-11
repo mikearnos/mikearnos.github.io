@@ -33,11 +33,15 @@ So we can access a byte or word in SRAM at `$70:0000`, or, that same byte or wor
 
 ---
 
-The other thing to know is that we're working with a **FastROM**, it uses the memory addresses `80:8000 - FF:FFFF` in **Lunar Address** opposed to `00:8000 - 6F:FFFF`. This is when accessing ROM addresses. This is how to decide which address to use in **Lunar Address**. Below is quoted from **SNES FastROM Information** in the [Documents](tools_docs_links.html#documents) section:
+The other thing to know is that we're working with a **FastROM**, it uses the memory addresses `80:8000 - FF:FFFF` in **Lunar Address** opposed to `00:8000 - 6F:FFFF`. This is when accessing ROM addresses. This is how to decide which address to use in **Lunar Address**. Below is quoted from the beginning of **SNES Memory Mapping** in the [Documents](tools_docs_links.html#documents) section:
 
-> The SNES lets you access ROM through bank $00 onwards and bank $80 onwards such that locations $008000 and $808000, $008001 and $808001, $008002 and $808002 etc... all access the same locations. When accessing bank $00 onwards the 65816 runs at 2.68Mhz. However, when accessing bank $80 onwards the 65816 can run at 2.68Mhz or 3.58Mhz depending on how you set bit 0 of $420D.
+> • FastROM's can execute at 3.58Mhz
+> • SlowROM's can only execute 2.68Mhz
+> 
+>   • The SNES lets you access ROM through bank $00 onwards and bank $80 onwards such that locations $00:8000 and $80:8000 are congruent, (they access the same locations.)
+>   • When accessing bank $00 onwards the 65816 runs at 2.68Mhz. However, when accessing bank $80 onwards the 65816 can run at 2.68Mhz or 3.58Mhz depending on how you set bit 0 of $420D.
 
-So **FastROM** is `80:8000`, **SlowROM** is `00:8000` in **Lunar Address**.
+So **FastROM** ROM starts at `80:8000`, **SlowROM** ROM starts at `00:8000` in **Lunar Address**.
 
 ---
 
