@@ -23,7 +23,7 @@ ROM Version: 1.0
 Region: USA/Canada
 ```
 
-The things to note here are **ROM Map** and **Speed**. Typically you'll see **LoROM** and **HiROM**. This allows games to use different memory layouts. Here we're using **LoROM**. Using the document **SNES Memory Mapping** in the [Documents](tools_docs_links.html#documents) section, you'll see under *Mode 20: LoROM Memory Model*:
+The things to note here are **ROM Map** and **Speed**. Typically you'll see **LoROM** and **HiROM**. This allows games to use different memory layouts. Here we're using **LoROM**. Using the document **SNES Memory Mapping** in the [Documents]({{ site.docs }}) section, you'll see under *Mode 20: LoROM Memory Model*:
 
 ```
 $70-$77 | $0000-$7FFF | (Mode 20 SRAM) 256KBytes
