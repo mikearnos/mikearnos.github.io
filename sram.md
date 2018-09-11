@@ -33,7 +33,7 @@ So we can access a byte or word in SRAM at `$70:0000`, or, that same byte or wor
 
 ---
 
-The other thing to know is that we're working with a **FastROM**, it uses the memory addresses `80:8000 - FF:FFFF` in **Lunar Address** opposed to `00:8000 - 6F:FFFF`. This is when accessing ROM addresses. This is how to decide which address to use in **Lunar Address**. Below is quoted from the beginning of **SNES Memory Mapping** in the VARIABLE [Documents]({{ site.docs }}) section:
+The other thing to know is that we're working with a **FastROM**, it uses the memory addresses `80:8000 - FF:FFFF` in **Lunar Address** opposed to `00:8000 - 6F:FFFF`. This is when accessing ROM addresses. This is how to decide which address to use in **Lunar Address**. Below is quoted from the beginning of **SNES Memory Mapping** in the [Documents]({{ site.docs }}) section:
 
 > • FastROM's can execute at 3.58Mhz
 > • SlowROM's can only execute 2.68Mhz
