@@ -2,6 +2,44 @@
 title: SRAM
 ---
 
+#Format
+```
+The saveram consists of 256 bytes
+
+Four blank bytes and a string
+.db 0, 0, 0, 0
+.db "Snakes BBU Area/NBA JAM TE"
+
+Then 16 save slots, each slot is 12 bytes
+.db 0x0B,0x0E,0x0B,	;initials "LOL"
+.db 0			;gets set to zero as part of initials
+.db 0x1D		;wins
+.db 0			;losses
+.db 0x1D		;streak
+.db 1			;file index?
+.db 0x1B		;27 teams defeated
+.db 0			;?
+.db 0			;?
+.db 0			;?
+
+Then 16 more bytes, checksums per slot?
+
+.db 0x19, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF
+.db 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF
+
+Then 2 checksum words
+
+.dw 0xA4A4
+.dw 0x561E
+
+Then a string and four blank bytes
+.db "*Claire R*"
+.db 0, 0, 0, 0
+```
+
+---
+
+#Internal memory copy
 The SRAM is at location ```$70:0000``` to ```$70:07FF```.
 
 Setting a breakpoint for when ```SRAM $70:0000``` is read, I get a break at ```$0D:FD21``` like this
@@ -23,7 +61,8 @@ Each loop ```X``` get increased by **2**, so the second loop reads **16 bits** f
 
 ---
 
-I think programmers want to touch SRAM as little as possible. SRAM always (as I've seen) has a checksum somewhere in the data, to verify that the data is not corrupt. A dying battery could corrupt the values and make it so you've defeated **65,535** teams or something like that. So we saw the code that copies from SRAM into internal ram once, and from there no more SRAM access. Because from there on, the game reads the saved player data from internal ram ```$7E:2378``` and not the cart anymore. When the game wants to save to SRAM, it does the checksum routine on the data at ```$7E:2378``` onwards, then uploads all the data to ```SRAM $70:0000```. So it reads and writes sram only in a few situations and all in one go.
+## Skip sanity check
+I think programmers want to touch SRAM as little as possible. SRAM always (as I've seen) has a checksum somewhere in the data, to verify that the data is not corrupt. A dying battery could corrupt the values and make it so you've defeated **65,535** teams or something like that. So we saw the code that copies from SRAM into internal ram once, and from there no more SRAM access. Because from there on, the game reads the saved player data from internal ram ```$7E:2378``` and not the cart anymore. When the game wants to save to SRAM, it does the checksum routine on the data at ```$7E:2378``` onwards, then uploads all the data to ```SRAM $70:0000```. So it reads and writes SRAM only in a few situations and all in one go.
 
 I did find this, it ignores the two(?) checksums.
 
