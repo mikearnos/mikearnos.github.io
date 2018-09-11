@@ -4,7 +4,7 @@ title: SRAM
 
 The SRAM is at location ```$70:0000``` to ```$70:07FF```.
 
-Setting a breakpoint for when ```$70:0000``` is read, I get a break at ```$0D:FD21``` like this
+Setting a breakpoint for when ```SRAM $70:0000``` is read, I get a break at ```$0D:FD21``` like this
 
 ```
 $0D/FD21 BF 00 00 70 LDA $700000,x[$70:0000] A:0001 X:0000
@@ -15,11 +15,11 @@ $0D/FD2B E0 00 01    CPX #$0100              A:0000 X:0002
 $0D/FD2E D0 F1       BNE $F1    [$FD21]      A:0000 X:0002
 ```
 
-It reads 16 bits from ```$70:0000``` (plus X) and stores it at ```$7E:2378``` (plus X)
+It reads 16 bits from ```SRAM $70:0000``` (plus X) and stores it at ```$7E:2378``` (plus X)
 It then increases X by 2, and checks that it's not ```0x100``` (256 decimal) yet
 and branches to the start and repeats.
 
-Each loop X get increased by 2, so the second loop reads 16 bits from ```$70:0002``` and copies to ```$7E237A```
+Each loop X get increased by 2, so the second loop reads 16 bits from ```SRAM $70:0002``` and copies to ```$7E237A```
 
 ---
 
