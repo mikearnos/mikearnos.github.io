@@ -16,6 +16,6 @@ Open up **Lunar Address**, make sure it's set to *LoROM - PC 80:8000 - FF:FFFF* 
 
 ---
 
-So once we've expanded our ROM, where do we start adding stuff? We will start adding stuff immediately at the end of the original ROM, right after the **24 megabit** ends. So if the game ended at file location `0x2FFFFF`, we will put data into the file starting at location `0x300000`. So type `300000` into *PC File Address* and you get `$E0:8000`. Always use the *PC File Address* and let **Lunar Address** calculate the SNES memory address if you have a ROM location. `$E0:8000` is where we can begin adding data and code to the ROM.
+So once we've expanded our ROM, where do we start adding stuff? We will start adding stuff immediately at the end of the original ROM, right after the **24 megabit** ends. So if the game ended at file location `0x2FFFFF`, we will put data into the file starting at location `0x300000`. So type `300000` into *PC File Address* and you get *SNES LoROM* `$E0:8000`. Always use the *PC File Address* and let **Lunar Address** calculate the SNES memory address if you have a ROM location. `$E0:8000` is where we can begin adding data and code to the ROM.
 
-If you typed in *SNES LoROM $E0:0000*, you'd get *PC File Address 0x300000* which looks OK, but that SNES address is actually wrong. Enter *PC File Address 30:0000* first and you'll get the correct *SNES LoROM $E0:8000*. That **8** makes a difference.
+If you typed in *SNES LoROM $E0:0000*, you'd get *PC File Address 0x300000* which looks OK, but that SNES address is actually wrong. Do it the other way around, enter *PC File Address 30:0000* first and you'll get the correct *SNES LoROM $E0:**8**000*. That **8** makes a difference.
