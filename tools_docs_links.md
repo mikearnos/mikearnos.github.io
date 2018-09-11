@@ -47,13 +47,13 @@ There are more out there, these are just the ones I use.
 **SNES Memory Mapping** - so you know where SRAM is found $70:xxxx, $30:6xxx, and address mirrors
 - <http://simsnex.tripod.com/SNESMem.txt> - [local mirror v3.5](local_mirror/SNESMem.txt)
 
-**FastROM** - a short post about SNES processor speeds and ROM mapping
+**SNES FastROM Information** - a short post about SNES processor speeds and ROM mapping
 - [zophar.net](https://www.zophar.net/documents/snes/snes-fastrom-information.html) - [local mirror](local_mirror/fastrom.txt)
 
 ---
 
 ## Links
-Here are links to learn more assembly and romhacking. Be sure to check out *their* links and resources as well!
+Here are links to learn more assembly and romhacking. Be sure to check out *their* links and resources as well.
 
 ---
 

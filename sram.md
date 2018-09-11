@@ -23,17 +23,17 @@ ROM Version: 1.0
 Region: USA/Canada
 ```
 
-The things to note here are **ROM Map** and **Speed**. Typically you'll see **LoROM** and **HiROM**. This allows games to use different memory layouts. Here we're using **LoROM**. Using the document **SNES Memory Mapping** in the [Documents](tools_docs_links.html#documents) section, you'll see under **Mode 20: LoROM Memory Model**
+The things to note here are **ROM Map** and **Speed**. Typically you'll see **LoROM** and **HiROM**. This allows games to use different memory layouts. Here we're using **LoROM**. Using the document **SNES Memory Mapping** in the [Documents](tools_docs_links.html#documents) section, you'll see under *Mode 20: LoROM Memory Model*:
 
 ```
 $70-$77 | $0000-$7FFF | (Mode 20 SRAM) 256KBytes
 ```
 
-So we can access a byte or word in SRAM at `$70:0000`, and through mirrors, that same byte or word can be read or written at `$77:0000`, or `$73:0000` since those are mirrors. Remember, these are addresses for SRAM memory in the cartridge, not ROM, and not internal SNES memory.
+So we can access a byte or word in SRAM at `$70:0000`, or, that same byte or word can be read or written at `$77:0000`, or `$73:0000` etc. since those are mirrors. Remember, these are addresses for SRAM memory in the cartridge, not ROM, and not internal SNES memory.
 
 ---
 
-The other thing to know is that we're working with a **FastROM**, it uses the memory addresses `80:8000 - FF:FFFF` in **Lunar Address** opposed to `00:8000 - 6F:FFFF`. This is when accessing ROM addresses. This is how to decide which address to use in *Lunar Address*.
+The other thing to know is that we're working with a **FastROM**, it uses the memory addresses `80:8000 - FF:FFFF` in **Lunar Address** opposed to `00:8000 - 6F:FFFF`. This is when accessing ROM addresses. This is how to decide which address to use in **Lunar Address**. Below is quoted from **SNES FastROM Information** in the [Documents](tools_docs_links.html#documents) section:
 
 > The SNES lets you access ROM through bank $00 onwards and bank $80 onwards such that locations $008000 and $808000, $008001 and $808001, $008002 and $808002 etc... all access the same locations. When accessing bank $00 onwards the 65816 runs at 2.68Mhz. However, when accessing bank $80 onwards the 65816 can run at 2.68Mhz or 3.58Mhz depending on how you set bit 0 of $420D.
 
