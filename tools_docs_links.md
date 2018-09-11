@@ -60,7 +60,7 @@ Here are links to learn more assembly and romhacking. Be sure to check out *thei
 **Metroid Construction** - ROM hacking athenaeum for all things Samus
 - <http://metroidconstruction.com/>
 
-**SMW Centrl** - *the* Super Mario World hacking site
+**SMW Central** - *the* Super Mario World hacking site
 - <https://www.smwcentral.net/>
 
 **The source for many more documents**
