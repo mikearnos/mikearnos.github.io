@@ -60,7 +60,7 @@ $E0/005E C0 B4       CPY #$B4                A:0002 X:0000 Y:00B4
 $E0/0060 00 F0       BRK #$F0                A:0002 X:0000 Y:00B4
 ```
 
-We saw earlier that `X` and `Y` are **8 bit**, yet our code when assembled uses a **16 bit** immediate value (**xkas** has no idea what state the CPU will be in when the code is being inserted), therefore, the extra **00** then spills into the next command (which should be `BEQ #$03 - 0xF0 0x03`) becomming `BRK #$F0 - 0x00 0xF0`. So the fix, is use an **8 bit** immediate value in our source, no problemo.
+We saw earlier that `X` and `Y` are **8 bit**, yet our code when assembled uses a **16 bit** immediate value (**xkas** has no idea what state the CPU will be in when the code is being inserted), therefore, the extra **00** then spills into the next command (which should be `0xF0 0x03 : BEQ #$03`) becomming `0x00 0xF0 : BRK #$F0`. So the fix, is use an **8 bit** immediate value in our source, no problemo.
 
 ```
 	CPY #$B4

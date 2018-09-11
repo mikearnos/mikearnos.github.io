@@ -37,7 +37,7 @@ The other thing to know is that we're working with a **FastROM**, it uses the me
 
 > The SNES lets you access ROM through bank $00 onwards and bank $80 onwards such that locations $008000 and $808000, $008001 and $808001, $008002 and $808002 etc... all access the same locations. When accessing bank $00 onwards the 65816 runs at 2.68Mhz. However, when accessing bank $80 onwards the 65816 can run at 2.68Mhz or 3.58Mhz depending on how you set bit 0 of $420D.
 
-So **FastROM** is `80:8000`, **SlowROM** is `00:8000`.
+So **FastROM** is `80:8000`, **SlowROM** is `00:8000` in **Lunar Address**.
 
 ---
 
