@@ -27,8 +27,9 @@ There are other options out there, these are just ones I'm familiar with.
 
 ---
 
-(!documents)
-## Documents
+<h2 id="documents">
+  Documents
+</h2>
 Here are some files with valuable information on the SNES hardware.  
 There are more out there, these are just the ones I use.
 
