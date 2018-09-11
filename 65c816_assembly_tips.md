@@ -15,7 +15,7 @@ Should only assemble into `STZ $1E2E` and use the current `DB` which is **$00**,
 
 Also note, `STZ` will be **$00** or **$0000** depending on if `A` is **8 bit** or **16 bit**.
 
-I figured it was easiest to use the **24 bit** `STA` commands for readability even though they take 1 cycle longer than **16 bit** `STA` commands. Check **A 65816 Primer** in the [Documents](tools_and_documents.html#documents) section for more information.
+I figured it was easiest to use the **24 bit** `STA` commands for readability even though they take 1 cycle longer than **16 bit** `STA` commands. Check **A 65816 Primer** in the [Documents](tools_docs_links.html#documents) section for more information.
 
 ---
 
@@ -34,7 +34,7 @@ change_bank_to_7F:
 	PHB			;save bank because we're about to change it
 
 	SEP #$20		;set 8 bit A processor settings
-	LDA #$7F		;bank we want to set (8 bit constant)
+	LDA #$7F		;bank we want to set (use 8 bit constant here)
 	PHA			;push it (8 bit push)
 	PLB			;pull it to bank (this is always 8 bit)
 
