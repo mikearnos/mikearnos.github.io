@@ -1,4 +1,2 @@
 theme: jekyll-theme-architect
 title: SNES ASM romhacking
-subtitle: with NBA Jam TE
-exclude: ["local_mirror"]
