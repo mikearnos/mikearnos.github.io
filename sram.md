@@ -19,7 +19,7 @@ It reads 16 bits from ```SRAM $70:0000``` (plus X) and stores it at ```$7E:2378`
 It then increases X by 2, and checks that it's not ```0x100``` (256 decimal) yet
 and branches to the start and repeats.
 
-Each loop X get increased by 2, so the second loop reads 16 bits from ```SRAM $70:0002``` and copies to ```$7E237A```
+Each loop X get increased by 2, so the second loop reads 16 bits from ```SRAM $70:0002``` and copies to ```$7E:237A```
 
 ---
 
@@ -38,4 +38,4 @@ org $0DFAD9
 	NOP #2
 ```
 
-So you can put whatever values into the .srm file and the game won't reject it.
+So you can put whatever values into the .srm file and the game won't reject it. Unexpected values may cause the game/emulator to crash.
