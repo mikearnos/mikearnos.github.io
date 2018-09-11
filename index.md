@@ -1,10 +1,10 @@
-## Welcome to SNES NBA Jam TE romhacking
+## Welcome to SNES ASM romhacking (with NBA Jam TE)
 
-This is a collection of useful information when modifying the SNES version of NBA Jam TE.
+This is a collection of useful information and tools when learning assembly and romhacking.
 
 ### Contents
 
-- [Tools and Documents](tools_and_documents.html)
+- [Tools, Docs, and Links](tools_docs_links.html)
 - Title screen code
 - Palettes
 - [Saveram](sram.html)
