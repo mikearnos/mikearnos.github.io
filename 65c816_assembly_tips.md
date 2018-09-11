@@ -66,4 +66,4 @@ We saw earlier that ```X``` and ```Y``` are **8 bit**, yet our code when assembl
 	CPY #$B4
 ```
 
-**Xkas** does have an **ASSUME** directive which can help this issue.
+**Xkas** does have an **ASSUME** directive which can help this issue, by telling **xkas** what state the CPU is in before it assembles our code.
