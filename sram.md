@@ -2,7 +2,7 @@
 title: SRAM
 ---
 
-#Format
+## Format
 ```
 The saveram consists of 256 bytes
 
@@ -39,7 +39,7 @@ Then a string and four blank bytes
 
 ---
 
-#Internal memory copy
+## Internal memory copy
 The SRAM is at location ```$70:0000``` to ```$70:07FF```.
 
 Setting a breakpoint for when ```SRAM $70:0000``` is read, I get a break at ```$0D:FD21``` like this
@@ -77,4 +77,4 @@ org $0DFAD9
 	NOP #2
 ```
 
-So you can put whatever values into the .srm file and the game won't reject it. Unexpected values may cause the game/emulator to crash.
+So you can put whatever values into the .srm file and the game won't reject it. **Unexpected values may cause the game/emulator to crash.**
