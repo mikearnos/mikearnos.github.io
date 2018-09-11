@@ -8,7 +8,7 @@ There are other options out there, these are just ones I'm familiar with.
 
 ---
 
-**Emulator/debugger**
+**Emulator / debugger**
 - [Geiger's Snes9x Debugger](http://geigercount.net/crypt/) - [local mirror v1.51.ep10r2](local_mirror/snes9x1.51.ep10r2.zip)
 - [NO$SNS](https://problemkaputt.de/sns.htm) - [local mirror v1.6](local_mirror/no$sns.zip)
 
@@ -27,7 +27,9 @@ There are other options out there, these are just ones I'm familiar with.
 
 ---
 
-[## Documents](!documents)
+<h2 id="documents">
+  Documents
+</h2>
 Here are some files with valuable information on the SNES hardware.  
 There are more out there, these are just the ones I use.
 

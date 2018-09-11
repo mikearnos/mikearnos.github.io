@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to SNES NBA Jam TE romhacking
 
 This is a collection of useful information when modifying the SNES version of NBA Jam TE.
 
