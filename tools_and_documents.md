@@ -34,16 +34,16 @@ There are more out there, these are just the ones I use.
 ---
 
 **fullsnes by Martin Korth (nocash)**
-<https://problemkaputt.de/fullsnes.htm> - [local mirror v1.6](local_mirror/fullsnes.htm)
+- <https://problemkaputt.de/fullsnes.htm> - [local mirror v1.6](local_mirror/fullsnes.htm)
 
 **The source for the files below**
-<https://emu-docs.org/?page=Super%20NES>
+- <https://emu-docs.org/?page=Super%20NES>
 
 **A 65816 Primer, has all info you'll ever need on processor ASM instructions**
-[zophar.net](https://www.zophar.net/fileuploads/2/10538ivwiu/65816info.txt) - [local mirror](local_mirror/65816info.txt)
+- [zophar.net](https://www.zophar.net/fileuploads/2/10538ivwiu/65816info.txt) - [local mirror](local_mirror/65816info.txt)
 
 **Qwertie's SNES Documentation, info on SNES hardware: controllers, VRAM, DMA, etc**
-<https://emu-docs.org/Super%20NES/General/snesdoc.html> - [local mirror](local_mirror/quertie_snes.html)
+- <https://emu-docs.org/Super%20NES/General/snesdoc.html> - [local mirror](local_mirror/quertie_snes.html)
 
 **SNES Memory Mapping, so you know where SRAM is found $70:xxxx, $30:6xxx, and address mirrors**
-<http://simsnex.tripod.com/SNESMem.txt> - [local mirror v3.5](local_mirror/SNESMem.txt)
+- <http://simsnex.tripod.com/SNESMem.txt> - [local mirror v3.5](local_mirror/SNESMem.txt)
