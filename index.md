@@ -8,5 +8,5 @@ This is a collection of useful information and tools when learning assembly and 
 - Title screen code
 - Palettes
 - [Saveram](sram.html)
-- [65c816 Assembly tips](65c816_assembly_tips.html)
+- [65816 Assembly tips](65816_assembly_tips.html)
 - About
