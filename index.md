@@ -5,9 +5,6 @@ This is a collection of useful information and tools when learning assembly and 
 ### Contents
 
 - [Tools, Docs, and Links](tools_docs_links.html)
-- Title screen code
-- Palettes
 - [Saveram](sram.html)
 - [ROM Expansion](rom_expansion.html)
 - [65816 Assembly tips](65816_assembly_tips.html)
-- About
