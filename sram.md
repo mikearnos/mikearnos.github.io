@@ -6,7 +6,7 @@ The SRAM is at location ```$70:0000``` to ```$70:07FF```.
 
 Setting a breakpoint for when ```$70:0000``` is read, I get a break at ```$0D:FD21``` like this
 
-```nasm
+```
 $0D/FD21 BF 00 00 70 LDA $700000,x[$70:0000] A:0001 X:0000
 $0D/FD25 9F 78 23 7E STA $7E2378,x[$7E:2378] A:0000 X:0000
 $0D/FD29 E8          INX                     A:0000 X:0000
@@ -27,7 +27,7 @@ I think programmers want to touch SRAM as little as possible. SRAM always (as I'
 
 I did find this, it ignores the two(?) checksums.
 
-```text
+```
 ;==================
 ;skip saveram check
 ;==================
