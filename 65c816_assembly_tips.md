@@ -27,7 +27,7 @@ The **Data Bank** register makes a **24 bit** address out of a **16 bit** addres
 ```
 
 
-Below is an example of how to change the bank. Typically you want to push databank (```PHB```, save it), then load an **8 bit** value into ```A```, ```X```, or ```Y```, then push that value. Then pull it into the **data bank** (```PLB```). Once our code is finished, we pull the original bank with another ```PLB``` and the original code can continue.
+Below is an example of how to change the bank. Typically you want to save (push) **data bank** (```PHB```), then load an **8 bit** value into ```A```, ```X```, or ```Y```, then push that value. Then pull it into the **data bank** (```PLB```). Once our code is finished, we pull the original bank with another ```PLB``` and the original code can continue.
 
 ```
 change_bank_to_7F:
@@ -37,7 +37,7 @@ change_bank_to_7F:
 	LDA #$7F		;bank we want to set (8 bit constant)
 	PHA			;push it (8 bit push)
 	PLB			;pull it to bank (this is always 8 bit)
-	
+
 	;do stuff
 
 	PLB			;restore original bank (this is always 8 bit)
