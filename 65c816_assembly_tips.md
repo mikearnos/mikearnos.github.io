@@ -15,7 +15,7 @@ Should only assemble into ```STZ $1E2E``` and use the current ```DB``` which is 
 
 Also note, ```STZ``` will be **$00** or **$0000** depending on if ```A``` is **8 bit** or **16 bit**.
 
-I figured it was easiest to use the **24 bit** ```STA``` commands for readability even though they take 1 cycle longer than **16 bit** ```STA``` commands. Check **A 65816 Primer** in the [Tools and Documents](tools_and_documents.html) section for more information.
+I figured it was easiest to use the **24 bit** ```STA``` commands for readability even though they take 1 cycle longer than **16 bit** ```STA``` commands. Check **A 65816 Primer** in the [Documents](tools_and_documents.html#documents) section for more information.
 
 ---
 
@@ -47,7 +47,7 @@ change_bank_to_7F:
 
 ## All Hell BRKs loose
 
-Say we have the code below and assemble it with xkas
+Say we have the code below and assemble it with **xkas**
 
 ```
 	CPY #$00B4
