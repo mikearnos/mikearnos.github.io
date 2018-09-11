@@ -50,12 +50,18 @@ There are more out there, these are just the ones I use.
 ---
 
 ## Links
-Here are links to other online resources to learn more assembly and romhacking.
+Here are links to learn more assembly and romhacking. Be sure to check out *their* links and resources as well!
 
 ---
 
-**The source for the files below**
-- <https://emu-docs.org/?page=Super%20NES>
+**Super NES Programming** - wiki books
+- <https://en.wikibooks.org/wiki/Super_NES_Programming>
 
 **Metroid Construction** - ROM hacking athenaeum for all things Samus
-<http://metroidconstruction.com/>
+- <http://metroidconstruction.com/>
+
+**SMW Centrl** - *the* Super Mario World hacking site
+- <https://www.smwcentral.net/>
+
+**The source for many more documents**
+- <https://emu-docs.org/?page=Super%20NES>
