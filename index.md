@@ -7,6 +7,6 @@ This is a collection of useful information when modifying the SNES version of NB
 - [Tools and Documents](tools_and_documents.html)
 - Title screen code
 - Palettes
-- Saveram
+- [Saveram](sram.html)
 - [65c816 Assembly tips](65c816_assembly_tips.html)
 - About

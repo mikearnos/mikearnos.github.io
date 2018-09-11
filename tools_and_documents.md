@@ -2,7 +2,9 @@
 title: SNES tools and Documents
 ---
 
+## Tools
 Here are some programs I use to do the modifications listed on this site. There are other options out there, these are just ones I'm familiar with.
+---
 
 ### File location vs. SNES memory location conversion
 - [Lunar Address](https://fusoya.eludevisibility.org/la/index.html) - [local mirror v1.04](local_mirror/la104.zip)
@@ -23,18 +25,18 @@ Here are some programs I use to do the modifications listed on this site. There 
 
 ---
 
-# Documents
-
-Here are some files with valueable information on the SNES hardware. There are more out there, these are just the ones I use.
+## Documents
+Here are some files with valuable information on the SNES hardware. There are more out there, these are just the ones I use.
+---
 
 ### The source for the files below
 https://emu-docs.org/?page=Super%20NES
 
 ### A 65816 Primer, has all info you'll ever need on processor ASM instructions
-https://www.zophar.net/fileuploads/2/10538ivwiu/65816info.txt
+https://www.zophar.net/fileuploads/2/10538ivwiu/65816info.txt - [local mirror](local_mirror/65816info.txt)
 
 ### Qwertie's SNES Documentation, info on SNES hardware: controllers, VRAM, DMA, etc
 https://emu-docs.org/Super%20NES/General/snesdoc.html
 
-SNES Memory Mapping, so you know where SRAM is found $70:xxxx, $30:6xxx, and address mirrors
-http://simsnex.tripod.com/SNESMem.txt
+### SNES Memory Mapping, so you know where SRAM is found $70:xxxx, $30:6xxx, and address mirrors
+http://simsnex.tripod.com/SNESMem.txt - [local mirror v3.5](local_mirror/SNESMem.txt)
